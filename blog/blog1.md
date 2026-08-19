@@ -1,5 +1,5 @@
 # Blog 1 
-What is Data Science to Me?
+Why learning data science in social and interdisciplinary contexts matters?
 
-Data Science to me is the mixture of statistics, data, and math in order to create a solution whether it be in a coding language or plain english. 
+Data Science in social and interdisciplinary context matters because 
 
