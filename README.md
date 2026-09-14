@@ -1,2 +1,2 @@
-# data-science-portfolio
+# Data-Science-Portfolio
 A page for my portfolio 
