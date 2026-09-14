@@ -6,7 +6,7 @@ UNC Charlotte
 I am a Data Science undergraduate student eager to apply analytical and technical skills in a real-world setting. Actively seeking internship/research opportunities where I can contribute to a collaborative team, solve meaningful problems, and continue developing my technical skill set. 
 ---
 ## LinkedIn
-[Connect with me on LinkedIn]([https://www.linkedin.com/in/yoanibinwana/])
+[Connect with me on LinkedIn](https://www.linkedin.com/in/yoanibinwana/)
 ## Resume
 [Download my Resume (PDF)](./resume.pdf)
 ---
