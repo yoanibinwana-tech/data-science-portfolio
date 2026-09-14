@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio Hero</title>
+<style>
+  :root {
+    --ink: #0B1F1A;
+    --paper: #F5F1E8;
+    --court: #1B4D3E;
+    --net: #E8A33D;
+    --ball: #C1440E;
+    --chalk: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6vw 8vw;
+    overflow: hidden;
+    background: linear-gradient(160deg, var(--court) 0%, #0F3328 55%, var(--ink) 100%);
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 8%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    max-width: 700px;
+    max-height: 700px;
+    border: 1.5px solid rgba(232, 163, 61, 0.25);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    right: -10%;
+    width: 60vw;
+    height: 1.5px;
+    max-width: 700px;
+    background: rgba(232, 163, 61, 0.25);
+  }
+
+  .eyebrow {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: var(--net);
+    margin-bottom: 1.25rem;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: clamp(2.6rem, 7vw, 5.2rem);
+    line-height: 1.02;
+    color: var(--chalk);
+    font-weight: 700;
+    max-width: 11ch;
+    z-index: 1;
+  }
+
+  .subtitle {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    color: rgba(245, 241, 232, 0.82);
+    margin-top: 1.5rem;
+    max-width: 42ch;
+    line-height: 1.5;
+    z-index: 1;
+  }
+
+  .actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.75rem;
+    flex-wrap: wrap;
+    z-index: 1;
+  }
+
+  .actions a {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.85rem 1.6rem;
+    border-radius: 2px;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+
+  .actions a.primary {
+    background: var(--ball);
+    color: var(--chalk);
+  }
+  .actions a.primary:hover {
+    background: #a8390b;
+    transform: translateY(-1px);
+  }
+
+  .actions a.secondary {
+    border: 1.5px solid rgba(245, 241, 232, 0.4);
+    color: var(--paper);
+  }
+  .actions a.secondary:hover {
+    border-color: var(--net);
+    color: var(--net);
+    transform: translateY(-1px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .actions a { transition: none; }
+  }
+
+  .content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 6rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+    color: var(--court);
+    border-bottom: 1.5px solid rgba(27, 77, 62, 0.15);
+    padding-bottom: 0.6rem;
+    margin-top: 3rem;
+  }
+  .content h2:first-child { margin-top: 0; }
+
+  .content p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #2A2A2A;
+    margin-top: 1rem;
+    max-width: 62ch;
+  }
+
+  .content a.inline {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--ball);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .content a.inline:hover { text-decoration: underline; }
+
+  .content ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+  }
+  .content ul li {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin-top: 0.5rem;
+  }
+  .content ul li a {
+    color: var(--court);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .content ul li a:hover { color: var(--ball); }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="eyebrow">Data Science Portfolio — UNC Charlotte</div>
+  <h1>Yoani Binwana</h1>
+  <p class="subtitle">
+    Studying how performance data shapes basketball outcomes —
+    from box scores to program-level trends across Division 1.
+  </p>
+  <div class="actions">
+    <a href="projects.md" class="primary">View Projects</a>
+    <a href="blog.md" class="secondary">Blog Posts</a>
+    <a href="https://www.linkedin.com/in/yoanibinwana/" class="secondary">Connect</a>
+  </div>
+</section>
+
+<div class="content">
+  <h2>About Me</h2>
+  <p>
+    I am a Data Science undergraduate student eager to apply analytical and
+    technical skills in a real-world setting. Actively seeking internship/research
+    opportunities where I can contribute to a collaborative team, solve
+    meaningful problems, and continue developing my technical skill set.
+  </p>
+
+  <h2>LinkedIn</h2>
+  <a class="inline" href="https://www.linkedin.com/in/yoanibinwana/">Connect with me on LinkedIn</a>
+
+  <h2>Resume</h2>
+  <a class="inline" href="./resume.pdf">Download my resume (PDF)</a>
+
+  <h2>Portfolio</h2>
+  <ul>
+    <li><a href="blog.md">Blog</a></li>
+    <li><a href="projects.md">Projects</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
