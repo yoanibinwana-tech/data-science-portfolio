@@ -35,6 +35,11 @@ Player Statistics: Offensive Rating vs Games Played
 Distribution of Offensive Rating Across D1 Players: Offensive Rating vs Numbers of Players
 <img width="792" height="655" alt="image" src="https://github.com/user-attachments/assets/8337d5ea-f895-46ba-94e2-7e84934a91dc" />
 
+**Ethics and Limitations:**
+Dataset: This dataset shows only the people who have made it onto a D1 roster. It addresses top tier D1 players from lower tier D1 players but it cannot show D1 players from high school or non D1 players. There is some important context missing. Some teams game schedule is comparably weaker than other teams' schedules. There's also no context to injury or leave during the season. Some stats may be inflated due to playing fewer amount of games compared to others. In certain teams, bias can take effect as well due to programs' concentration on roles. One program may favor using their PG more than another program so things like the usage rate can be thrown off due to that as well. 
+
+**References:**
+
 
 
 
