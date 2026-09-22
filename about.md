@@ -12,6 +12,6 @@ I am a Data Science undergraduate student eager to apply analytical and technica
 ---
 ## Portfolio
 - [Blog](blog.md)
-- [Projects](projects.md)
+- [Projects](projects.html)
 
 
