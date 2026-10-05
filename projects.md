@@ -65,6 +65,22 @@ Menne, M. J., Durre, I., Vose, R. S., Gleason, B. E., & Houston, T. G. (2012). A
 **Data Cleaning:**
 The data contained many different informations about wind, snow, and other flags that trigger the prediction of weather but my research question focused on only precipitation so I kept the daily precipitation column and left out the rest.
 
+**Visualizations (Linear Regression):**
+<img width="1336" height="540" alt="image" src="https://github.com/user-attachments/assets/da244c2f-e825-44aa-bcb7-2a9c387aa6a8" />
+This image represents the Predicted vs the actual next week rainfall. As you can see, these two panels look nearly identical.
+
+<img width="682" height="538" alt="image" src="https://github.com/user-attachments/assets/03ddaf54-1cd0-4a62-a34e-5b93238cbb83" />
+This image represents the Mean Absolute Error comparison between both graphs. The lower, the better. Each bar is one model and they are both about 0.78. This means the rolling averages did not reduce the error compared with the raw daily values.
+
+**Visualizations (Random Forest):**
+<img width="1331" height="536" alt="image" src="https://github.com/user-attachments/assets/6cfae2e8-6675-4aca-b699-b2401f7d486b" />
+This image represents the Predicted vs the actual next week rainfall. The rolling panel is more scattered than the raw panel. The random forest is more spread out than the linear regression plots, giving a wider range of predictions.
+
+<img width="802" height="611" alt="image" src="https://github.com/user-attachments/assets/09d91fbf-014b-480f-90e3-72909087a1c0" />
+This image represents the Mean Absolute Error comparison for all five models. The lower, the better. Here, the random forest: rolling 7-day (0.76) is the lowest. This means the linear regression rolling averages made no difference but the random forest rolling averages gave the best score of any model.
+
+
+
 
 
 
