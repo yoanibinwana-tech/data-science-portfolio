@@ -79,7 +79,8 @@ This image represents the Predicted vs the actual next week rainfall. The rollin
 <img width="802" height="611" alt="image" src="https://github.com/user-attachments/assets/09d91fbf-014b-480f-90e3-72909087a1c0" />
 This image represents the Mean Absolute Error comparison for all five models. The lower, the better. Here, the random forest: rolling 7-day (0.76) is the lowest. This means the linear regression rolling averages made no difference but the random forest rolling averages gave the best score of any model.
 
-
+<img width="1328" height="607" alt="image" src="https://github.com/user-attachments/assets/faf3fffc-90cb-423a-973e-cc4d63a6fe2b" />
+This image represents one of the trees in the random forest. 
 
 
 
