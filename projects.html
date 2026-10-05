@@ -327,6 +327,88 @@
         <img src="https://github.com/user-attachments/assets/8337d5ea-f895-46ba-94e2-7e84934a91dc" alt="Distribution of offensive rating across D1 players">
       </figure>
     </section>
+
+        <section class="project">
+      <div class="project-number">Project 02</div>
+      <h2 class="project-title">Portfolio project two: does a rolling 7-day average improve weekly rainfall prediction?</h2>
+
+      <div class="question-block">
+        <span class="label">Research question</span>
+        <p>How does incorporating rolling 7-day averages of rainfall improve the accuracy of predicting weekly precipitation compared to using raw daily data?</p>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="label">Source</span>
+          <span class="value"><a href="https://www.ncei.noaa.gov/" target="_blank" rel="noopener">NCEI NOAA</a> — National Centers for Environmental Information</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">Task</span>
+          <span class="value">Regression</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">Target variable</span>
+          <span class="value">Total precipitation over the seven days following the forecast day</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">Unit of analysis</span>
+          <span class="value">A forecast day paired with the total rainfall of the seven days that follow it</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">Features</span>
+          <span class="value">Raw daily rainfall for the previous 28 days, four 7-day rolling averages (7, 14, and 21 days before), and seasonality features</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">Size</span>
+          <span class="value">5,418 daily forecast records</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">Missing values</span>
+          <span class="value">0 missing days</span>
+        </div>
+      </div>
+
+      <h3 class="section-head">Background</h3>
+      <p class="var-desc">Predicting rainfall supports agricultural productivity and food security, and helps us anticipate drought. Machine learning has been used to predict rainfall from all kinds of atmospheric measurements. For example, Liyew and Melese (2021) compared multivariate linear regression, random forest, and XGBoost for daily rainfall amount, judging the models with MAE and RMSE. Another related study used lagged values of precipitation, temperature, and insolation to capture rainfall patterns.</p>
+
+      <h3 class="section-head">Data cleaning</h3>
+      <p class="var-desc">The data contained many columns about wind, snow, and other flags used in weather prediction, but my research question focused only on precipitation, so I kept the daily precipitation column and left out the rest.</p>
+
+      <h3 class="section-head">Visualizations (Linear Regression)</h3>
+      <figure>
+        <img src="https://github.com/user-attachments/assets/da244c2f-e825-44aa-bcb7-2a9c387aa6a8" alt="Linear regression: predicted vs actual next-week rainfall">
+        <figcaption>Predicted vs. actual next-week rainfall. The two panels look nearly identical.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://github.com/user-attachments/assets/03ddaf54-1cd0-4a62-a34e-5b93238cbb83" alt="Linear regression: mean absolute error comparison">
+        <figcaption>Mean absolute error comparison (lower is better). Both models are about 0.78, so the rolling averages did not reduce the error compared with the raw daily values.</figcaption>
+      </figure>
+
+      <h3 class="section-head">Visualizations (Random Forest)</h3>
+      <figure>
+        <img src="https://github.com/user-attachments/assets/6cfae2e8-6675-4aca-b699-b2401f7d486b" alt="Random forest: predicted vs actual next-week rainfall">
+        <figcaption>Predicted vs. actual next-week rainfall. The rolling panel is more scattered than the raw panel, and the random forest gives a wider range of predictions than linear regression.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://github.com/user-attachments/assets/09d91fbf-014b-480f-90e3-72909087a1c0" alt="Mean absolute error comparison for all five models">
+        <figcaption>Mean absolute error for all five models (lower is better). The random forest with rolling 7-day averages is lowest at 0.76, so rolling averages made no difference for linear regression but gave the best score of any model for random forest.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://github.com/user-attachments/assets/faf3fffc-90cb-423a-973e-cc4d63a6fe2b" alt="One tree from the random forest">
+        <figcaption>One of the trees in the random forest.</figcaption>
+      </figure>
+
+      <h3 class="section-head">Conclusion</h3>
+      <p class="var-desc">Overall, the models show that incorporating rolling 7-day averages of rainfall does not improve the accuracy of predicting weekly precipitation compared to using raw daily data.</p>
+
+      <h3 class="section-head">References</h3>
+      <ul class="var-list">
+        <li><p class="var-desc">Breiman, L. (2001). Random forests. <em>Machine Learning, 45</em>(1), 5–32. <a href="https://doi.org/10.1023/A:1010933404324" target="_blank" rel="noopener">https://doi.org/10.1023/A:1010933404324</a></p></li>
+        <li><p class="var-desc">Liyew, C. M., &amp; Melese, H. A. (2021). Machine learning techniques to predict daily rainfall amount. <em>Journal of Big Data, 8</em>, Article 153. <a href="https://doi.org/10.1186/s40537-021-00545-4" target="_blank" rel="noopener">https://doi.org/10.1186/s40537-021-00545-4</a></p></li>
+        <li><p class="var-desc">Menne, M. J., Durre, I., Vose, R. S., Gleason, B. E., &amp; Houston, T. G. (2012). An overview of the Global Historical Climatology Network-Daily database. <em>Journal of Atmospheric and Oceanic Technology, 29</em>(7), 897–910. <a href="https://doi.org/10.1175/JTECH-D-11-00103.1" target="_blank" rel="noopener">https://doi.org/10.1175/JTECH-D-11-00103.1</a></p></li>
+      </ul>
+    </section>
+    
   </main>
  
   <footer class="page-foot">
