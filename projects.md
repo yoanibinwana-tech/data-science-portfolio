@@ -52,3 +52,19 @@ Dataset: This dataset shows only the people who have made it onto a D1 roster. I
 - Size: The size of the dataset included 5,418 daily records of forecast.
 - Missing Values: There was 0 missing days out of the days recorded.
 
+**Background:**
+This is important because predicting rainfall helps agricultural productivity and our food security. It's also important we have rainfall to ensure that we don't fall into a drought. Machine learning has been used to help predict rainfall from all kinds of atmospheric measurements. For example, in a study multivariate linear regression, random forest, and XGBoost was compared for daily rainfall amount, Liyew and Melese (2021). They used MAE and RMSE to judge the models. Another study related to this used lagged values of precipitation, temperature, and insolation to capture rainfall patterns. 
+
+**References:**
+Breiman, L. (2001). Random forests. Machine Learning, 45(1), 5–32. https://doi.org/10.1023/A:1010933404324 
+
+Liyew, C. M., & Melese, H. A. (2021). Machine learning techniques to predict daily rainfall amount. Journal of Big Data, 8, Article 153. https://doi.org/10.1186/s40537-021-00545-4 
+
+Menne, M. J., Durre, I., Vose, R. S., Gleason, B. E., & Houston, T. G. (2012). An overview of the Global Historical Climatology Network-Daily database. Journal of Atmospheric and Oceanic Technology, 29(7), 897–910. https://doi.org/10.1175/JTECH-D-11-00103.1 
+
+**Data Cleaning:**
+The data contained many different informations about wind, snow, and other flags that trigger the prediction of weather but my research question focused on only precipitation so I kept the daily precipitation column and left out the rest.
+
+
+
+
