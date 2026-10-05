@@ -42,6 +42,13 @@ Dataset: This dataset shows only the people who have made it onto a D1 roster. I
 
 ## Project 2
 
-
-
+**Portfolio project two:**
+- Research Question: How does incorporating rolling 7-day averages of rainfall improve the accuracy of predicting weekly precipitation compared to using raw daily data?
+- Source: NCEI NOAA GOV (National Center For Environmental Information, National Oceanic and Atmospheric Administration) https://www.ncei.noaa.gov/
+- Task: Regression
+- Target Variable: The total precipitation over the seven days following the forecast day
+- Unit of Analysis: A forecast day paired with the total rainfall of the seven days that follow it.
+- Features: The features include raw daily rainfall in the previous 28 days, a four 7-day rolling average from 7, 14, and 21 days before, and lastly seasonality features.
+- Size: The size of the dataset included 5,418 daily records of forecast.
+- Missing Values: There was 0 missing days out of the days recorded.
 
