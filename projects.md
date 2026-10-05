@@ -82,6 +82,6 @@ This image represents the Mean Absolute Error comparison for all five models. Th
 <img width="1328" height="607" alt="image" src="https://github.com/user-attachments/assets/faf3fffc-90cb-423a-973e-cc4d63a6fe2b" />
 This image represents one of the trees in the random forest. 
 
-
+Overall, the models show that incorporating rolling 7-day averages of rainfall does not improve the accuracy of predicting weekly precipitation compared to using raw daily data. 
 
 
